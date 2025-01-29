@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  color: #50d8af;
+  color: #20a7db;
   transition: 0.5s;
 }
 
@@ -50,7 +50,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #50d8af;
+  background: #20a7db;
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -61,7 +61,7 @@ h6 {
 }
 
 .back-to-top:focus {
-  background: #50d8af;
+  background: #20a7db;
   color: #fff;
   outline: none;
 }
@@ -88,11 +88,11 @@ h6 {
 }
 
 #topbar .contact-info a:hover {
-  color: #50d8af;
+  color: #20a7db;
 }
 
 #topbar .contact-info i {
-  color: #50d8af;
+  color: #20a7db;
   padding: 4px;
 }
 
@@ -111,7 +111,7 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: #50d8af;
+  color: #20a7db;
 }
 
 #topbar .social-links a:first-child {
@@ -147,12 +147,23 @@ h6 {
 }
 
 #header #logo h1 a span {
-  color: #50d8af;
+  color: #20a7db;
 }
 
 #header #logo img {
   padding: 0;
   margin: 0;
+}
+
+#logo {
+  display: flex;
+  align-items: center; /* Align logo and text vertically */
+  gap: 10px; /* Space between logo and title */
+}
+
+.logo-img {
+  height: 40px; /* Adjust logo size */
+  width: auto;
 }
 
 /*--------------------------------------------------------------
@@ -197,12 +208,12 @@ h6 {
 #intro .intro-content h2 {
   color: #0c2e8a;
   margin-bottom: 30px;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 700;
 }
 
 #intro .intro-content h2 span {
-  color: #50d8af;
+  color: #20a7db;
   text-decoration: underline;
 }
 
@@ -231,13 +242,13 @@ h6 {
 }
 
 #intro .intro-content .btn-projects {
-  background: #50d8af;
-  border: 2px solid #50d8af;
+  background: #20a7db;
+  border: 2px solid #20a7db;
 }
 
 #intro .intro-content .btn-projects:hover {
   background: none;
-  color: #50d8af;
+  color: #20a7db;
 }
 
 #intro #intro-carousel {
@@ -351,7 +362,7 @@ h6 {
 
 .nav-menu li:hover > a,
 .nav-menu .menu-active > a {
-  color: #50d8af;
+  color: #20a7db;
 }
 
 .nav-menu > li {
@@ -379,7 +390,7 @@ h6 {
 }
 
 .nav-menu ul li:hover > a {
-  color: #50d8af;
+  color: #20a7db;
 }
 
 .nav-menu ul ul {
@@ -462,11 +473,11 @@ h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #50d8af;
+  color: #20a7db;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #50d8af;
+  color: #20a7db;
 }
 
 #mobile-body-overly {
@@ -520,7 +531,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   width: 50px;
   height: 3px;
-  background: #50d8af;
+  background: #20a7db;
   bottom: 0;
   left: 0;
 }
@@ -572,7 +583,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .content i {
   font-size: 20px;
   padding-right: 4px;
-  color: #50d8af;
+  color: #20a7db;
 }
 
 #about .content ul {
@@ -620,7 +631,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .box .icon i:before {
   background: #0c2e8a;
-  background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
+  background: linear-gradient(45deg, #20a7db 0%, #a3ebd5 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -678,7 +689,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #clients .owl-dot.active {
-  background-color: #50d8af;
+  background-color: #20a7db;
 }
 
 /* Our Portfolio Section
@@ -812,7 +823,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #testimonials .owl-dot.active {
-  background-color: #50d8af;
+  background-color: #20a7db;
 }
 
 /* Call To Action Section
@@ -849,8 +860,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn:hover {
-  background: #50d8af;
-  border: 3px solid #50d8af;
+  background: #20a7db;
+  border: 3px solid #20a7db;
 }
 
 /* Our Team Section
@@ -876,7 +887,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .details {
-  background: #50d8af;
+  background: #20a7db;
   color: #fff;
   padding: 15px;
   border-radius: 0 0 3px 3px;
@@ -923,7 +934,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #50d8af;
+  color: #20a7db;
 }
 
 #contact .contact-info address,
@@ -945,7 +956,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-info a:hover {
-  color: #50d8af;
+  color: #20a7db;
 }
 
 #contact .contact-address,
@@ -960,8 +971,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form #sendmessage {
-  color: #50d8af;
-  border: 1px solid #50d8af;
+  color: #20a7db;
+  border: 1px solid #20a7db;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1002,7 +1013,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #50d8af;
+  background: #20a7db;
   border: 0;
   border-radius: 3px;
   padding: 10px 30px;
@@ -1040,7 +1051,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #0c2e8a;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
@@ -1053,7 +1064,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1001px) {
   #call-to-action .cta-btn-container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1070,7 +1081,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+
+
+  #header #logo h1 {
+    font-size: 30px; /* update size when screen small */
+  }
+
+}
+
+
+@media (max-width: 1000px) {
   .back-to-top {
     bottom: 15px;
   }
@@ -1081,7 +1102,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #header #logo h1 {
-    font-size: 34px;
+    font-size: 24px; /* update size when screen small */
   }
 
   #header #logo img {
@@ -1106,7 +1127,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 999px) {
   #intro .intro-content h2 {
     font-size: 34px;
   }
@@ -1135,5 +1156,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 576px) {
   #contact #google-map {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header #logo h1 {
+    font-size: 20px; /* Smaller font for very small screens */
   }
 }
