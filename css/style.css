@@ -1102,7 +1102,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #header #logo h1 {
-    font-size: 24px; /* update size when screen small */
+    font-size: 20px; /* update size when screen small */
   }
 
   #header #logo img {
