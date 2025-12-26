@@ -1,0 +1,444 @@
+/* Modern Design for About Us to Footer Sections Only */
+
+:root {
+  --primary-blue: #0066cc;
+  --primary-dark: #004d99;
+  --accent-green: #00c896;
+  --text-dark: #2c3e50;
+  --text-light: #6c757d;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* About Section Enhancement */
+#about {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+#about .about-img img {
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.4s ease;
+}
+
+#about .about-img img:hover {
+  transform: scale(1.02);
+}
+
+#about .content h3 {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-light);
+  font-weight: 400;
+}
+
+#about .content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+/* Services Section - Modern Card Design */
+#services {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 0;
+}
+
+#services .section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+#services .box {
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s ease;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+#services .box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-blue), var(--accent-green));
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+#services .box:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-blue);
+}
+
+#services .box:hover::before {
+  transform: scaleX(1);
+}
+
+#services .box .icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  transition: all 0.4s ease;
+  box-shadow: var(--shadow-md);
+}
+
+#services .box:hover .icon {
+  transform: rotate(5deg) scale(1.1);
+  background: linear-gradient(135deg, var(--accent-green) 0%, #00b082 100%);
+}
+
+#services .box .icon i {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+#services .box .title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+#services .box .title a {
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+#services .box:hover .title a {
+  color: var(--primary-blue);
+}
+
+#services .box .description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin-bottom: 15px;
+}
+
+/* Service Activities Gallery - Modern Cards */
+#service-activities {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+#service-activities .section-header {
+  margin-bottom: 50px;
+}
+
+#service-activities .section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#service-activities .section-header p {
+  font-size: 16px;
+  color: var(--text-light);
+  margin-top: 15px;
+}
+
+#service-activities .portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s ease;
+  margin-bottom: 30px;
+}
+
+#service-activities .portfolio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+#service-activities .portfolio-item img {
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#service-activities .portfolio-item:hover img {
+  transform: scale(1.08);
+}
+
+#service-activities .portfolio-overlay {
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.95) 0%, rgba(0, 200, 150, 0.9) 100%);
+  border-radius: 12px;
+}
+
+#service-activities .portfolio-info h2 {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 15px;
+  line-height: 1.4;
+}
+
+/* Portfolio Section Enhancement */
+#portfolio {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 0;
+}
+
+#portfolio .section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#portfolio .section-header p {
+  background: #ffffff;
+  padding: 20px 25px;
+  border-left: 4px solid var(--primary-blue);
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+#portfolio .section-header p:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-md);
+  border-left-width: 6px;
+}
+
+/* Contact Section - Modern Card Layout */
+#contact {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+#contact .section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+#contact .contact-info .contact-address,
+#contact .contact-info .contact-phone,
+#contact .contact-info .contact-email {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+  height: 100%;
+}
+
+#contact .contact-info > div:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-blue);
+}
+
+#contact .contact-info i {
+  font-size: 48px;
+  color: var(--primary-blue);
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.1) 0%, rgba(0, 200, 150, 0.1) 100%);
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+#contact .contact-info > div:hover i {
+  transform: scale(1.15) rotate(5deg);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-green) 100%);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 102, 204, 0.3);
+}
+
+#contact .contact-info h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+#contact .contact-info p,
+#contact .contact-info address {
+  font-size: 15px;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+#contact .contact-info a {
+  color: var(--primary-blue);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+#contact .contact-info a:hover {
+  color: var(--accent-green);
+}
+
+#contact iframe {
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid #ffffff;
+  margin-top: 30px;
+}
+
+/* Footer Enhancement */
+#footer {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
+  padding: 50px 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#footer .copyright {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#footer .copyright strong {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* WhatsApp Button Enhancement */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 80px;
+  right: 15px;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background: linear-gradient(135deg, #128c7e 0%, #075e54 100%);
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float:focus {
+  color: #fff;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 70px;
+    right: 10px;
+    font-size: 25px;
+  }
+}
+
+/* Back to Top Button Enhancement */
+.back-to-top {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
+  box-shadow: var(--shadow-md);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.back-to-top:hover {
+  background: linear-gradient(135deg, var(--accent-green) 0%, #00b082 100%);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  #services .box,
+  #contact .contact-info > div {
+    margin-bottom: 20px;
+  }
+  
+  #about,
+  #services,
+  #service-activities,
+  #portfolio,
+  #contact {
+    padding: 60px 0;
+  }
+  
+  .section-header h2 {
+    font-size: 28px;
+  }
+  
+  #service-activities .portfolio-item img {
+    height: 250px;
+  }
+}
+
+/* Smooth Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wow {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection Color */
+::selection {
+  background: var(--primary-blue);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: var(--primary-blue);
+  color: #ffffff;
+}
