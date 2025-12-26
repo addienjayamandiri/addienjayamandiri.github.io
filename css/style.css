@@ -751,6 +751,84 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: translate(-50%, -50%);
 }
 
+/* Service Activities Gallery Section
+--------------------------------*/
+
+#service-activities {
+  padding: 60px 0 30px 0;
+  background: #f6f6f6;
+}
+
+#service-activities .section-header {
+  margin-bottom: 40px;
+}
+
+#service-activities .portfolio-item {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#service-activities .portfolio-item img {
+  transition: all ease-in-out 0.4s;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#service-activities .portfolio-item:hover img {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+#service-activities .portfolio-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease-in-out 0.4s;
+}
+
+#service-activities .portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+  background: rgba(32, 167, 219, 0.85);
+}
+
+#service-activities .portfolio-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+#service-activities .portfolio-item h2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  #service-activities .portfolio-item img {
+    height: 250px;
+  }
+  
+  #service-activities .portfolio-item h2 {
+    font-size: 16px;
+  }
+}
+
 /* Testimonials Section
 --------------------------------*/
 
